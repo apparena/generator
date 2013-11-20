@@ -1,4 +1,3 @@
-$('.box-app').click(function(){
-    console.log('HALLo WELT');
-    $("#tuning-box").slideDown('slow');
+$('.link-box').click(function(){
+    $(".tuning-box").slideDown('slow');
 });
