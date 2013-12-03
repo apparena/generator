@@ -6,17 +6,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>App Initializer</title>
-        <meta name="description" content="">
+        <title>Appalizr | Start your Backbone Web-Applications the right way!</title>
+        <meta name="description" content="The Appalizer is an App starting template generator !">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="assets/css/main.css">
 
         <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -33,14 +27,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Appalizer</a>
-          <p>Start an App project in 15 seconds!</p>
+          <a class="navbar-brand" href="#">Appalizr</a>
+          <p><small>Start your Backbone.js App project in 15 seconds!</small></p>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="docs.html">Docs</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -49,98 +42,138 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <p><strong>Appalizer</strong> is an App templates generator to help you getting started with a new project based on Twitter Bootstrap & HTML5 Boilerplate. It generates for you a clean customizable template with just what you need to start your Application!</p>
+        <p><strong>Appalizr</strong> is an App template generator to help you getting started with a new Web-App project based on Backbone.js & Twitter Bootstrap. It generates a clean customizable template with just what you need to start your Application!</p>
       </div>
     </div>
-
-    <!-- START PRE CONFIGURATIOn ROW -->
+    <!-- START PRE CONFIGURATION ROW -->
     <div class="container">
       <div class="row">
         <h1 class="main-heading">1 - Pre-configuration</h1>
         <div class="col-lg-4 config-box">
-          <div class="link-box gray">
-            <h2>Application 1</h2>
+          <div id="pre-one" class="link-box gray">
+            <h2>Facebook App</h2>
           </div>
           <p><a class="btn btn-default gray" href="#">Docs &raquo;</a></p>
         </div>
         <div class="col-lg-4 config-box">
-          <div class="link-box">
-            <h2>Application 2</h2>
+          <div id="pre-two" class="link-box">
+            <h2>Web App</h2>
           </div>
           <p><a class="btn btn-default orange" href="#">Docs &raquo;</a></p>
         </div>
         <div class="col-lg-4 config-box">
-          <div class="link-box blue">
-            <h2>Application 3</h2>
+          <div id="pre-three" class="link-box blue">
+            <h2>Mobile Web-App</h2>
           </div>
           <p><a class="btn btn-default blue" href="#">Docs &raquo;</a></p>
         </div>
       </div> <!-- END ROW 1 -->
 
+        <!-- START CUSTOMIZE ROW 1 -->
+    <form id="config-form">
+      <div class="row tuning-box">
+        <h1 class="main-heading">Core</h1>
+          <div class="customize-section">
+                <ul>
+                    <li><label><input type="checkbox" name="core" value="core" disabled checked>backbone.js 1.1.0 </label></li>
+                    <li><label><input type="checkbox" name="core" value="core" disabled checked>underscore.js 1.5.2 </label></li>
+                    <li><label><input type="checkbox" name="core" value="core" disabled checked>mustache.js 0.7.3 </label></li>
+                </ul>
+            </div>
+            <span id="link-box-close" title="close fine tuning">&#10006;</span>
+      </div>
+        <div class="row tuning-box">
+            <h1>App modules</h1>
+            <div class="customize-section">
+                <ul>
+                    <li><label><input type="checkbox" name="appconfig" value="facebook">Facebook</label><i class="icon-ok-sign" data-toggle="tooltip" title="Key active" id="blah"></i></li>
+                    <li><label><input type="checkbox" name="appconfig" value="twitter">Twitter</label></li>
+                    <li><label><input type="checkbox" name="appconfig" value="google">Google</label></li>
+                    <li><label><input type="checkbox" name="appconfig" value="greetingcards">Greeting Cards</label></li>
+                    <li><label><input type="checkbox" name="appconfig" value="logging">Logging</label></li>
+                </ul>
+            </div>
+            <div class="customize-section">
+                <ul>
+                    <li><label><input type="checkbox" name="appconfig" value="notification">Notification</label></li>
+                    <li><label><input type="checkbox" name="appconfig" value="optivo">Optivo</label></li>
+                    <li><label><input type="checkbox" name="appconfig" value="participate">Participate</label></li>
+                    <li><label><input type="checkbox" name="appconfig" value="praemiedirekt">Prämie Direkt</label></li>
+                </ul>
+            </div>
+            <div class="customize-section">
+                <ul>
+                    <li><label><input type="checkbox" name="appconfig" value="profile">Profile</label></li>
+                    <li><label><input type="checkbox" name="appconfig" value="share">Share</label></li>
+                    <li><label><input type="checkbox" name="appconfig" value="terms">Terms</label></li>
+                    <li><label><input type="checkbox" name="appconfig" value="terminal">Terminal</label></li>
+                </ul>
+            </div>
+        </div>
+
     <!-- START CUSTOMIZE ROW 1 -->
       <div class="row tuning-box">
-        <h1 class="main-heading">2 - Fine tuning</h1>
+        <h1>Fine tuning</h1>
         <div class="customize-section">
-            <h3>HTML / CSS</h3>
+            <h3>HTML / CSS Template</h3>
             <ul>
-                <li><label><input type="radio" name="html1" value="html1">html1</label></li>
-                <li><label><input type="radio" name="html2" value="html2">html2</label></li>
-                <li><label><input type="radio" name="html3" value="html3">html3</label></li>
+                <li><label><input type="radio" name="iCheck" value="html1">Bootstrap 2</label></li>
+                <li><label><input type="radio" name="html" value="html2">Bootstrap 3</label></li>
+                <li><label><input type="radio" name="html" value="html3">H5BP</label></li>
             </ul>
         </div>
         <div class="customize-section">
-            <h3>Javascript</h3>
+            <h3>HTML5 Polyfills</h3>
             <ul>
-                <li><label><input type="radio" name="js1" value="js1">js1</label></li>
-                <li><label><input type="radio" name="js2" value="js2">js2</label></li>
-                <li><label><input type="radio" name="js3" value="js3">js3</label></li>
+                <li><label><input type="radio" name="polyfills" value="modernizr">Modernizr</label></li>
+                <li><label><input type="radio" name="polyfills" value="html5shiv">Just HTML5shiv</label></li>
+                <li><label><input type="checkbox" name="polyfills" value="respond">Respond</label></li>
             </ul>
         </div>
         <div class="customize-section">
             <h3>jQuery</h3>
             <ul>
-                <li><label><input type="radio" name="jquery1" value="jquery1">jquery1</label></li>
-                <li><label><input type="radio" name="jquery2" value="jquery2">jquery2</label></li>
-                <li><label><input type="checkbox" name="jquery3" value="jquery3">jquery3</label></li>
+                <li><label><input type="checkbox" name="jquery" value="minified">Minified</label></li>
+                <li><label><input type="checkbox" name="jquery" value="development">Development</label></li>
             </ul>
         </div>
-        <span id="link-box-close" title="close fine tuning">&#10006;</span>
       </div><!-- END ROW 2 -->
 
     <!-- START CUSTOMIZE ROW 2 -->
       <div class="row tuning-box">
-        <h1 class="main-heading">2 - Optional components </h1>
+        <h1>Optional H5BP components </h1>
         <div class="customize-section">
-            <h3>Optional 1</h3>
             <ul>
-                <li><label><input type="checkbox" name="optional1-1" value="optional1-1">optional1-1</label></li>
-                <li><label><input type="checkbox" name="optional1-2" value="optional1-2">optional1-2</label></li>
-                <li><label><input type="checkbox" name="optional1-3" value="optional1-3">optional1-3</label></li>
+                <li><label><input type="checkbox" name="optional" value="ieclasses">IE Classes</label></li>
+                <li><label><input type="checkbox" name="optional" value="chromeframe">Chrome Frame</label></li>
+                <li><label><input type="checkbox" name="optional" value="googleanalytics">Google Analytics</label></li>
+                <li><label><input type="checkbox" name="optional" value="piwik">Piwik</label></li>
             </ul>
         </div>
         <div class="customize-section">
-            <h3>Optional 2</h3>
             <ul>
-                <li><label><input type="checkbox" name="optional2-1" value="optional2-1">optional2-1</label></li>
-                <li><label><input type="checkbox" name="optional2-2" value="optional2-2">optional2-2</label></li>
-                <li><label><input type="checkbox" name="optional2-3" value="optional2-3">optional2-3</label></li>
+                <li><label><input type="checkbox" name="optional" value="htaccess">.htaccess</label></li>
+                <li><label><input type="checkbox" name="optional" value="favicons">Favicon</label></li>
+                <li><label><input type="checkbox" name="optional" value="appletouchicons">Apple Touch Icons</label></li>
+                <li><label><input type="checkbox" name="optional" value="pluginsjs">plugins.js</label></li>
             </ul>
         </div>
         <div class="customize-section">
-            <h3>Optional 3</h3>
             <ul>
-                <li><label><input type="checkbox" name="optional3-1" value="optional3-1">optional3-1</label></li>
-                <li><label><input type="checkbox" name="optional3-2" value="optional3-2">optional3-2</label></li>
-                <li><label><input type="checkbox" name="optional3-3" value="optional3-2">optional3-3</label></li>
+                <li><label><input type="checkbox" name="optional" value="robotstxt">Robots.txt</label></li>
+                <li><label><input type="checkbox" name="optional" value="humanstxt">Humans.txt</label></li>
+                <li><label><input type="checkbox" name="optional" value="404page">404 Page</label></li>
+                <li><label><input type="checkbox" name="optional" value="adobecrossdomain">Adobe Cross Domain</label></li>
             </ul>
         </div>
       </div><!-- END ROW 3 -->
-
+       <p>Total filesize: 8.45KB</p>
+        </form>
       <div class="row tuning-box">
-        <div class="col-lg-4 col-lg-offset-1 link-box">
+        <div id="download" class="col-lg-4 col-lg-offset-1 link-box">
             <h2>Download it!</h2>
         </div>
-        <div class="col-lg-4 col-lg-offset-1 link-box">
+        <div id="inside" class="col-lg-4 col-lg-offset-1 link-box">
             <h2>Whats inside?</h2>
         </div>
       </div><!-- END DOWNLOAD ROW -->
@@ -159,7 +192,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-lg-offset-2">
-            <img src="http://placehold.it/300x200" class="img-rounded" alt="placeholder ALT" title="placeholder TITLE">
+            <img src="http://placehold.it/300x200" alt="placeholder ALT" title="placeholder TITLE">
             <h2>Github Repositories</h2>
             <ul>
                 <li><a href="#">repo 1</a></li>
@@ -168,14 +201,15 @@
             </ul>
         </div>
       </div>
-
-      <footer>
-        <p>&copy; by ME | 2013</p>
-      </footer>
-
     </div> <!-- /container -->
+    <footer id="footer">
+        <div class="row">
+            <div class="col-lg-6" style="padding: 15px"><p> &copy; by ME | 2013 | Meet us @</p></div>
+            <div class="col-lg-6"><span class="social-sprite facebook"><a href="http://www.facebook.com/"></a></span></div>
+        </div>
+    </footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
 
